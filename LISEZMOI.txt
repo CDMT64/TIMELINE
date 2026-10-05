@@ -1,0 +1,26 @@
+TIMELINE MISSION — mise en ligne (GitHub Pages ou tout hébergement HTTPS)
+
+1. Déposer TOUS les fichiers de ce dossier dans un sous-dossier dédié du site,
+   par exemple  /timeline/  (ne pas mélanger avec d'autres applications).
+     index.html              l'outil (fonctionne aussi seul, téléchargé)
+     sw.js                   fonctionnement hors connexion
+     manifest.webmanifest    installation comme application
+     icon-192.png, icon-512.png, apple-touch-icon.png   icônes
+
+2. Liens à mettre sur votre page d'accueil :
+     Ouvrir / installer :  https://<compte>.github.io/<depot>/timeline/
+     Télécharger (ordis) : même adresse + index.html, avec l'attribut
+       download="timeline-mission.html"  sur le lien.
+
+3. Installer sur tablette (une connexion nécessaire la première fois) :
+     iPad (Safari) : ouvrir le lien > bouton Partager > « Sur l'écran d'accueil ».
+     Android (Chrome) : ouvrir le lien > menu ⋮ > « Installer l'application ».
+   Ensuite l'application fonctionne sans réseau. Les missions restent sur l'appareil.
+
+4. Publier une mise à jour :
+     - modifier APP_VERSION dans index.html (ex. '1.2')
+     - modifier VERSION dans sw.js avec le même numéro
+     - déposer les fichiers. Les tablettes affichent « Nouvelle version disponible »
+       à la prochaine connexion ; les missions enregistrées sont conservées.
+     - Ordinateurs avec le fichier téléchargé : « Exporter » les missions,
+       retélécharger le fichier, puis « Importer ».

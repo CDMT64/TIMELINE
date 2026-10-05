@@ -1,7 +1,8 @@
 /* Timeline mission — fonctionnement hors connexion.
    À CHAQUE MISE À JOUR : changer VERSION ici ET APP_VERSION dans index.html. */
-const VERSION = '1.0.0';
-const CACHE = 'timeline-mission-' + VERSION;
+const VERSION = '1.1';
+const BUILD = '2026-10-05'; // change à chaque dépôt, même si le numéro de version ne change pas
+const CACHE = 'timeline-mission-' + VERSION + '-' + BUILD;
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png', './apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
